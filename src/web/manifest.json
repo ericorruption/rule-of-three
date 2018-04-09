@@ -1,0 +1,57 @@
+{
+  "name": "Rule of Three",
+  "short_name": "Rule of 3",
+  "description": "Build an Extension!",
+  "theme_color": "#2196F3",
+  "background_color": "#2196F3",
+  "start_url": "index.html?utm_source=homescreen",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "assets/icons/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/icons/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/icons/icon-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "assets/icons/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "assets/icons/ms-touch-icon-144x144-precomposed.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "assets/icons/chrome-touch-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/icons/icon-large.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.google.samples.apps.iosched",
+      "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/app/example-app1/id123456789"
+    }
+  ]
+}

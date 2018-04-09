@@ -8,6 +8,8 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
+    "web": "webpack-dev-server --mode development --allowed-hosts .ngrok.io",
+    "web-prd": "webpack --mode production && cp src/web/manifest.json dist/",
     "icon": "cd assets/icon && node ../../scripts/icon original.png",
     "test": "jest"
   },
@@ -29,6 +31,7 @@
     "jest-expo": "26.0.0",
     "react-native-scripts": "1.13.1",
     "react-test-renderer": "16.3.0-alpha.1",
+    "sw-precache-webpack-plugin": "0.11.5",
     "webpack": "4.5.0",
     "webpack-cli": "2.0.14",
     "webpack-dev-server": "3.1.2"
