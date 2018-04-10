@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Clipboard } from "react-native";
 import TextInput from "./TextInput";
 import styles from "./App.style";
 import calculate from "./calculate";
@@ -57,9 +57,13 @@ export default class App extends React.Component {
               />
               <TextInput
                 style={{ fontWeight: "bold" }}
-                editable={false}
                 value={this.state.result ? this.state.result.toString() : ""}
                 placeholder="Result"
+                disabled={!this.state.result}
+                selectTextOnFocus={true}
+                onFocus={() =>
+                  Clipboard.setString(this.state.result.toString())
+                }
               />
             </View>
           </View>
