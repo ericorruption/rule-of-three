@@ -1,5 +1,7 @@
 import React from "react";
-import { StyleSheet, View, TextInput } from "react-native";
+import { View, Text } from "react-native";
+import TextInput from "./TextInput";
+import styles from "./App.style";
 import calculate from "./calculate";
 
 export default class App extends React.Component {
@@ -32,37 +34,37 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <TextInput
-          onChangeText={this.handleChangeText.bind(this, "a")}
-          style={styles.input}
-        />
-        <TextInput
-          onChangeText={this.handleChangeText.bind(this, "b")}
-          style={styles.input}
-        />
-        <TextInput
-          onChangeText={this.handleChangeText.bind(this, "c")}
-          style={styles.input}
-        />
-        <TextInput
-          style={styles.input}
-          editable={false}
-          value={this.state.result || ""}
-        />
+        <View style={styles.content}>
+          <Text style={styles.title}>Rule of Three</Text>
+          <View>
+            <View style={styles.row}>
+              <TextInput
+                onChangeText={this.handleChangeText.bind(this, "a")}
+                keyboardType="numeric"
+                placeholder="Value 1"
+              />
+              <TextInput
+                onChangeText={this.handleChangeText.bind(this, "b")}
+                keyboardType="numeric"
+                placeholder="Value 2 (e.g. 100%)"
+              />
+            </View>
+            <View style={styles.row}>
+              <TextInput
+                onChangeText={this.handleChangeText.bind(this, "c")}
+                keyboardType="numeric"
+                placeholder="Value 3"
+              />
+              <TextInput
+                style={{ fontWeight: "bold" }}
+                editable={false}
+                value={this.state.result ? this.state.result.toString() : ""}
+                placeholder="Result"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  input: {
-    borderColor: "#999",
-    borderWidth: 1
-  }
-});
