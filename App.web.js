@@ -1,6 +1,21 @@
 import React from "react";
-import { AppRegistry } from "react-native";
-import App from "./src/App";
+import { AppRegistry, View } from "react-native";
+import BaseApp from "./src/App";
+import brandColor from "./src/colors";
+
+const withTopBar = Component => () => (
+  <View
+    style={{
+      flex: 1,
+      borderColor: brandColor,
+      borderTopWidth: 8
+    }}
+  >
+    <Component />
+  </View>
+);
+
+const App = withTopBar(BaseApp);
 
 AppRegistry.registerComponent("App", () => App);
 AppRegistry.runApplication("App", { rootTag: document.getElementById("app") });
