@@ -9,7 +9,8 @@
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "web": "webpack-dev-server --mode development --allowed-hosts .ngrok.io",
-    "web-prd": "webpack --mode production && cp src/web/manifest.json dist/",
+    "web-prd":
+      "NODE_ENV=production webpack --mode production && cp src/web/manifest.json dist/",
     "icon": "cd assets/icon && node ../../scripts/icon original.png",
     "test": "jest"
   },
