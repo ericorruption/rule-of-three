@@ -1,7 +1,12 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
 
-const plugins = [new HtmlWebpackPlugin({ template: "src/web/index.html" })];
+const plugins = [
+  new HtmlWebpackPlugin({
+    title: "Rule of Three",
+    template: "src/web/index.html"
+  })
+];
 
 if (process.env.NODE_ENV === "production") {
   plugins.push(

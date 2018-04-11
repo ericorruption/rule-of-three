@@ -2,8 +2,8 @@
   "name": "Rule of Three",
   "short_name": "Rule of 3",
   "description": "Build an Extension!",
-  "theme_color": "#2196F3",
-  "background_color": "#2196F3",
+  "theme_color": "#7746e8",
+  "background_color": "#7746e8",
   "start_url": "index.html?utm_source=homescreen",
   "display": "minimal-ui",
   "icons": [
