@@ -5,13 +5,14 @@ const sizes = [
   16,
   19,
   20,
+  22, // menubar
   25,
   30,
   32,
   35,
   38,
   40,
-  44,
+  44, // menubar, edge extension
   48,
   50,
   128,
