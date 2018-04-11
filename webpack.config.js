@@ -1,5 +1,8 @@
+const { resolve } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
+
+const appDirectory = resolve(__dirname, "./");
 
 const plugins = [
   new HtmlWebpackPlugin({
@@ -30,7 +33,11 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        include: [
+          resolve(appDirectory, "App.web.js"),
+          resolve(appDirectory, "src"),
+          resolve(appDirectory, "node_modules/react-native-easy-toast")
+        ],
         loader: "babel-loader",
         options: {
           plugins: ["react-native-web"]

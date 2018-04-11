@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text, Clipboard } from "react-native";
+import { View, Text, Clipboard, Keyboard } from "react-native";
+import Toast from "react-native-easy-toast";
 import TextInput from "./TextInput";
 import styles from "./App.style";
 import calculate from "./calculate";
@@ -29,6 +30,12 @@ export default class App extends React.Component {
     newState[param] = value;
     this.setState(newState);
     this.handleFormChange();
+  }
+
+  handleResultFocus() {
+    Keyboard.dismiss();
+    Clipboard.setString(this.state.result.toString());
+    this.refs.toast.show("Result copied to clipboard!");
   }
 
   render() {
@@ -61,13 +68,12 @@ export default class App extends React.Component {
                 placeholder="Result"
                 disabled={!this.state.result}
                 selectTextOnFocus={true}
-                onFocus={() =>
-                  Clipboard.setString(this.state.result.toString())
-                }
+                onFocus={this.handleResultFocus.bind(this)}
               />
             </View>
           </View>
         </View>
+        <Toast ref="toast" />
       </View>
     );
   }
