@@ -2,12 +2,19 @@
   "expo": {
     "name": "Rule of Three",
     "slug": "rule-of-three",
+    "privacy": "public",
     "icon": "assets/icon/original.png",
     "primaryColor": "#7746e8",
     "sdkVersion": "26.0.0",
     "splash": {
       "image": "assets/splash.png",
       "backgroundColor": "#7746e8"
+    },
+    "ios": {
+      "bundleIdentifier": "com.ericquanz.ruleofthree"
+    },
+    "android": {
+      "package": "com.ericquanz.ruleofthree"
     }
   }
 }
