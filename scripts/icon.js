@@ -1,25 +1,29 @@
 const sharp = require("sharp");
 
 const image = process.argv[2];
-const sizes = [
+
+const browserSizes = [180];
+const PWAsizes = [192, 512];
+
+const extensionSizes = [
   16,
   19,
   20,
-  22, // menubar
   25,
   30,
   32,
   35,
   38,
   40,
-  44, // menubar, edge extension
+  44,
   48,
   50,
   128,
   150,
-  176,
-  512
+  176
 ];
+
+const sizes = [...extensionSizes, ...browserSizes, ...PWAsizes];
 
 const resize = size =>
   sharp(image)

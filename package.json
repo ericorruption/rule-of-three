@@ -1,18 +1,25 @@
 {
   "name": "rule-of-three",
+  "productName": "Rule of Three",
   "version": "0.1.0",
   "private": true,
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "mobile": "react-native-scripts start",
     "web": "webpack-dev-server --mode development --allowed-hosts .ngrok.io",
-    "web-prd": "NODE_ENV=production webpack --mode production && cp src/web/manifest.json dist/",
-    "premenubar": "npm run web-prd && cp App.menubar.js dist/index.js",
+    "clean": "rimraf dist",
+    "preweb-prd": "npm run clean && mkdirp dist/images/icon",
+    "web-prd": "NODE_ENV=production webpack --mode production",
+    "copy-web-icons":
+      "cpy 180.png 192.png 512.png ../../dist/images/icon --cwd=assets/icon",
+    "postweb-prd": "cpy assets/web/* dist && npm run copy-web-icons",
+    "premenubar":
+      "npm run web-prd && cpy App.menubar.js dist --rename=index.js && cpy assets/menubar/* dist",
     "menubar": "electron dist",
+    "premenubar-prd": "rimraf release && npm run premenubar",
+    "menubar-prd": "electron-packager dist --all --out=release",
     "icon": "cd assets/icon && node ../../scripts/icon original.png",
+    "start": "npm run web & npm run mobile",
     "test": "jest"
   },
   "jest": {
@@ -24,18 +31,22 @@
     "react-dom": "16.3.1",
     "react-native": "0.54.0",
     "react-native-easy-toast": "1.1.0",
-    "react-native-web": "0.5.4",
-    "sharp": "0.20.1"
+    "react-native-web": "0.5.4"
   },
   "devDependencies": {
     "babel-loader": "7.1.4",
     "babel-plugin-react-native-web": "0.5.4",
+    "cpy-cli": "1.0.1",
     "electron": "1.8.4",
+    "electron-packager": "12.0.1",
     "html-webpack-plugin": "3.2.0",
     "jest-expo": "26.0.0",
     "menubar": "5.2.3",
+    "mkdirp": "0.5.1",
     "react-native-scripts": "1.13.1",
     "react-test-renderer": "16.3.0-alpha.1",
+    "rimraf": "2.6.2",
+    "sharp": "0.20.1",
     "sw-precache-webpack-plugin": "0.11.5",
     "webpack": "4.5.0",
     "webpack-cli": "2.0.14",

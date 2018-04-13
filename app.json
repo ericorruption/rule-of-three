@@ -1,5 +1,9 @@
 {
   "expo": {
+    "name": "Rule of Three",
+    "slug": "rule-of-three",
+    "icon": "assets/icon/original.png",
+    "primaryColor": "#7746e8",
     "sdkVersion": "26.0.0"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "Rule of Three",
   "short_name": "Rule of 3",
-  "description": "Build an Extension!",
+  "description": "Calulate rule of 3 math problems effortlessly!",
   "manifest_version": 2,
   "version": "1.0",
   "author": "ericorruption",

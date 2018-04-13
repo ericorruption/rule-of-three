@@ -3,8 +3,9 @@
 # expo
 .expo/
 
-# react native web
+# releases
 dist
+release
 
 # dependencies
 /node_modules
