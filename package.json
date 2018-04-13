@@ -20,7 +20,8 @@
     "menubar-prd": "electron-packager dist --all --out=release",
     "icon": "cd assets/icon && node ../../scripts/icon original.png",
     "start": "npm run web & npm run mobile",
-    "test": "jest --bail --coverage"
+    "test": "jest --bail --coverage",
+    "precommit": "npm t"
   },
   "jest": {
     "preset": "jest-expo"
@@ -40,6 +41,7 @@
     "electron": "1.8.4",
     "electron-packager": "12.0.1",
     "html-webpack-plugin": "3.2.0",
+    "husky": "0.14.3",
     "jest-expo": "26.0.0",
     "menubar": "5.2.3",
     "mkdirp": "0.5.1",
