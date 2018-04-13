@@ -20,7 +20,7 @@
     "menubar-prd": "electron-packager dist --all --out=release",
     "icon": "cd assets/icon && node ../../scripts/icon original.png",
     "start": "npm run web & npm run mobile",
-    "test": "jest"
+    "test": "jest --bail --coverage"
   },
   "jest": {
     "preset": "jest-expo"
