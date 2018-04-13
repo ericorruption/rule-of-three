@@ -3,6 +3,7 @@ const sharp = require("sharp");
 const image = process.argv[2];
 
 const browserSizes = [180];
+const windowsSizes = [270];
 const PWAsizes = [192, 512];
 
 const extensionSizes = [
@@ -23,7 +24,12 @@ const extensionSizes = [
   176
 ];
 
-const sizes = [...extensionSizes, ...browserSizes, ...PWAsizes];
+const sizes = [
+  ...extensionSizes,
+  ...browserSizes,
+  ...windowsSizes,
+  ...PWAsizes
+];
 
 const resize = size =>
   sharp(image)
