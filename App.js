@@ -10,7 +10,7 @@ export default () => (
       <View style={{ height: StatusBar.currentHeight }} />
     )}
     {Platform.OS === "ios" &&
-      Platform.Version < 11 && (
+      parseInt(Platform.Version, 10) < 11 && (
         <View style={{ backgroundColor: brandColor, height: 20 }} />
       )}
     <App />
