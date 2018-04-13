@@ -4,6 +4,10 @@
     "slug": "rule-of-three",
     "icon": "assets/icon/original.png",
     "primaryColor": "#7746e8",
-    "sdkVersion": "26.0.0"
+    "sdkVersion": "26.0.0",
+    "splash": {
+      "image": "assets/splash.png",
+      "backgroundColor": "#7746e8"
+    }
   }
 }
