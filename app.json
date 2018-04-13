@@ -2,6 +2,7 @@
   "expo": {
     "name": "Rule of Three",
     "slug": "rule-of-three",
+    "description": "Calulate rule of 3 math problems effortlessly!",
     "privacy": "public",
     "icon": "assets/icon/original.png",
     "primaryColor": "#7746e8",
