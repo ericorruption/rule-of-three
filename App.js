@@ -9,6 +9,10 @@ export default () => (
     {Platform.OS === "android" && (
       <View style={{ height: StatusBar.currentHeight }} />
     )}
+    {Platform.OS === "ios" &&
+      Platform.Version < 11 && (
+        <View style={{ backgroundColor: brandColor, height: 20 }} />
+      )}
     <App />
   </SafeAreaView>
 );
