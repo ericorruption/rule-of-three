@@ -4,7 +4,16 @@ const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
 
 const appDirectory = resolve(__dirname, "./");
 
-const plugins = [new HtmlWebpackPlugin({ template: "src/index.html" })];
+const plugins = [
+  new HtmlWebpackPlugin({
+    template: "src/index.html",
+    minify: {
+      collapseWhitespace: true,
+      removeComments: true,
+      minifyCSS: true
+    }
+  })
+];
 
 if (process.env.NODE_ENV === "production") {
   plugins.push(

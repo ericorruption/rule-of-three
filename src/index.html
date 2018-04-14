@@ -15,6 +15,19 @@
     body {
       min-width: 280px;
       min-height: 180px;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+    }
+
+    /* loading styles */
+
+    #app>p {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: 900;
+      font-size: 4rem;
     }
   </style>
 
@@ -30,9 +43,11 @@
 
 <body>
   <div id="app">
-    Loading...
+    <p>Loading...</p>
   </div>
-  <noscript>Your browser doesn't support or disabled JavaScript. Try to enable it or use a different browser to use this app.</noscript>
+  <noscript>
+    <p>Your browser doesn't support or disabled JavaScript. Try to enable it or use a different browser to use this app.</p>
+  </noscript>
 </body>
 
 </html>
