@@ -9,24 +9,21 @@
     "web": "webpack-dev-server --mode development --allowed-hosts .ngrok.io",
     "start": "npm run web & npm run mobile",
     "test": "jest --bail --coverage",
-    "clean":
-      "rimraf dist && rimraf release && mkdirp dist/images/icon && mkdirp release",
+    "clean": "rimraf dist && rimraf release && mkdirp dist/images/icon && mkdirp release",
     "icon": "cd assets/icon && node ../../scripts/icon original.png",
     "prebuild-web": "npm run clean",
     "build-web": "NODE_ENV=production webpack --mode production",
-    "copy-web-icons":
-      "cpy 180.png 192.png 270.png 512.png ../../dist/images/icon --cwd=assets/icon",
+    "copy-web-icons": "cpy 180.png 192.png 270.png 512.png ../../dist/images/icon --cwd=assets/icon",
     "postbuild-web": "cpy assets/web/* dist && npm run copy-web-icons",
-    "premenubar":
-      "npm run build-web && cpy App.menubar.js dist --rename=index.js && cpy assets/menubar/* dist",
+    "premenubar": "npm run build-web && cpy App.menubar.js dist --rename=index.js && cpy assets/menubar/* dist",
     "menubar": "electron dist",
     "prebuild-menubar": "rimraf release && npm run premenubar",
     "build-menubar": "electron-packager dist --all --out=release",
     "prebuild-extension": "npm run build-web",
-    "build-extension":
-      "zip -r release/extension.zip manifest.json assets dist -x dist/manifest.json assets/web/manifest.json",
+    "build-extension": "zip -r release/extension.zip manifest.json assets dist -x dist/manifest.json assets/web/manifest.json",
     "predeploy-web": "npm run icon && npm run build-web",
     "deploy-web": "gh-pages -d dist",
+    "deploy-expo": "exp publish",
     "precommit": "npm test"
   },
   "jest": {
@@ -46,6 +43,7 @@
     "cpy-cli": "1.0.1",
     "electron": "1.8.4",
     "electron-packager": "12.0.1",
+    "exp": "52.0.3",
     "gh-pages": "1.1.0",
     "html-webpack-plugin": "3.2.0",
     "husky": "0.14.3",
