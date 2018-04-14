@@ -5,6 +5,7 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     justifyContent: Platform.OS === "web" ? "center" : "flex-start",
+    alignItems: "center",
     width: "100%",
     padding: "5%"
   },

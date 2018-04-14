@@ -4,6 +4,7 @@ exports[`renders without crashing 1`] = `
 <View
   style={
     Object {
+      "alignItems": "center",
       "backgroundColor": "#fff",
       "flex": 1,
       "justifyContent": "flex-start",
