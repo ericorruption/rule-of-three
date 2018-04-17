@@ -20,7 +20,10 @@
     "prebuild-menubar": "rimraf release && npm run premenubar",
     "build-menubar": "electron-packager dist --all --out=release",
     "prebuild-extension": "npm run build-web",
-    "build-extension": "zip -r release/extension.zip manifest.json assets dist -x dist/manifest.json assets/web/manifest.json",
+    "build-extension":
+      "zip -r release/extension.zip manifest.json assets dist -x dist/manifest.json assets/web/manifest.json",
+    "build-ios": "exp build:ios",
+    "build-android": "exp build:android",
     "predeploy-web": "npm run icon && npm run build-web",
     "deploy-web": "gh-pages -d dist",
     "deploy-expo": "exp publish",
