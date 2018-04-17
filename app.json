@@ -15,7 +15,9 @@
       "bundleIdentifier": "com.ericquanz.ruleofthree"
     },
     "android": {
-      "package": "com.ericquanz.ruleofthree"
+      "package": "com.ericquanz.ruleofthree",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.ericquanz.ruleofthree",
+      "permissions": []
     }
   }
 }
