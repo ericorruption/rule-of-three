@@ -1,7 +1,7 @@
 {
   "name": "rule-of-three",
   "productName": "Rule of Three",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -20,8 +20,7 @@
     "prebuild-menubar": "rimraf release && npm run premenubar && cd dist && npm install && cd ..",
     "build-menubar": "cd dist && electron-packager . --all --out=../release",
     "prebuild-extension": "npm run build-web",
-    "build-extension":
-      "zip -r release/extension.zip manifest.json assets dist -x dist/manifest.json assets/web/manifest.json",
+    "build-extension": "zip -r release/extension.zip README.md manifest.json assets/icon dist -x dist/manifest.json assets/web/manifest.json *.DS_Store",
     "build-ios": "exp build:ios",
     "build-android": "exp build:android",
     "predeploy-web": "npm run icon && npm run build-web",

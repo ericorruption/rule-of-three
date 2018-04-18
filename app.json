@@ -12,7 +12,9 @@
       "backgroundColor": "#7746e8"
     },
     "ios": {
-      "bundleIdentifier": "com.ericquanz.ruleofthree"
+      "bundleIdentifier": "com.ericquanz.ruleofthree",
+      "supportsTablet": true,
+      "appStoreUrl": "https://itunes.apple.com/us/app/rule-of-three-dreisatz/id1372814954?ls=1&mt=8"
     },
     "android": {
       "package": "com.ericquanz.ruleofthree",
