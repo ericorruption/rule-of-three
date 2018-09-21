@@ -14,7 +14,7 @@
     "prebuild-web": "npm run clean",
     "build-web": "NODE_ENV=production webpack --mode production",
     "copy-web-icons": "cpy 180.png 192.png 270.png 512.png ../../dist/images/icon --cwd=assets/icon",
-    "postbuild-web": "cpy assets/web/* dis && cpy assets/privacy-policy/* dist/privacy-policy && npm run copy-web-icons",
+    "postbuild-web": "cpy assets/web/* dist && cpy assets/privacy-policy/* dist/privacy-policy && npm run copy-web-icons",
     "premenubar": "npm run build-web && cpy assets/menubar/* dist",
     "menubar": "cd dist && electron .",
     "prebuild-menubar": "rimraf release && npm run premenubar && cd dist && npm install && cd ..",
