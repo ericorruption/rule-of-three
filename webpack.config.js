@@ -40,7 +40,7 @@ if (process.env.NODE_ENV === "production") {
       filename: "service-worker.js",
       minify: true,
       navigateFallback: "index.html",
-      navigateFallbackWhitelist: ["privacy-policy"],
+      navigateFallbackWhitelist: [/^\/privacy-policy\//],
       staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/]
     })
   );
