@@ -13,23 +13,23 @@ Calculate rule of three math problems effortlessly. This app aims to be a write-
 
 Each platform targetted has different requirements.
 
-* [Node.js v9.11+](https://nodejs.org/) (and [NPM](https://npmjs.com))
-* [React Native dependencies](https://facebook.github.io/react-native/docs/getting-started.html) will give you an overview of mobile platform requirements.
-* [Electron Packager](https://github.com/electron-userland/electron-packager) gives you the requirements for desktop app releases.
+- [Node.js v8+](https://nodejs.org/) (and [NPM](https://npmjs.com))
+- [React Native dependencies](https://facebook.github.io/react-native/docs/getting-started.html) will give you an overview of mobile platform requirements.
+- [Electron Packager](https://github.com/electron-userland/electron-packager) gives you the requirements for desktop app releases.
 
 ### Publishing
 
 You need **paid** accounts to publish your app in the following platforms.
 
-* [iOS & OSX](https://developer.apple.com/programs/enroll/) ($100 yearly)
-* [Android](https://play.google.com/apps/publish) ($25 one time)
-* [Windows / Edge](https://developer.microsoft.com/en-us/dashboard) ($45 one time)
-* [Chrome](https://chrome.google.com/webstore/developer/dashboard) ($5 one time)
+- [iOS & OSX](https://developer.apple.com/programs/enroll/) ($100 yearly)
+- [Android](https://play.google.com/apps/publish) ($25 one time)
+- [Windows / Edge](https://developer.microsoft.com/en-us/dashboard) ($45 one time)
+- [Chrome](https://chrome.google.com/webstore/developer/dashboard) ($5 one time)
 
 ## Installing
 
-* Clone the project
-* In a terminal, navigate to the project folder and run `npm install`
+- Clone the project
+- In a terminal, navigate to the project folder and run `npm install`
 
 ### Generating assets
 
@@ -47,9 +47,9 @@ You can execute `npm run` for an overview of all scripts available.
 
 The project has different npm scripts to handle the different builds and deployments.
 
-* Extensions should be uploaded by hand in [their](#) [respective](https://chrome.google.com/webstore/developer/dashboard) [websites](https://addons.mozilla.org/en-US/developers/)
-* Android apps should be registered in Play Store. For each new version you should upload the generated `.apk` file.
-* iOS apps should be sent to the app store either via xCode or the Application Loader.
+- Extensions should be uploaded by hand in [their](#) [respective](https://chrome.google.com/webstore/developer/dashboard) [websites](https://addons.mozilla.org/en-US/developers/)
+- Android apps should be registered in Play Store. For each new version you should upload the generated `.apk` file.
+- iOS apps should be sent to the app store either via xCode or the Application Loader.
 
 ## Contributing
 
@@ -57,6 +57,6 @@ Fork it. Branch it. Push it. PR it.
 
 ## TODO
 
-* Desktop app signing / packaging
-* Edge browser extension
-* Mobile App Release automation
+- Desktop app signing / packaging
+- Edge browser extension
+- Mobile App Release automation
