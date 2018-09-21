@@ -25,3 +25,4 @@ yarn-error.log*
 
 assets/icon/*
 !assets/icon/original.png
+!assets/icon/adaptive-icon.png

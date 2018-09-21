@@ -7,7 +7,7 @@
     "icon": "assets/icon/original.png",
     "primaryColor": "#7746E8",
     "githubUrl": "https://github.com/ericorruption/rule-of-three",
-    "sdkVersion": "30.0.1",
+    "sdkVersion": "30.0.0",
     "splash": {
       "image": "assets/splash.png",
       "backgroundColor": "#7746E8"
@@ -22,6 +22,7 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.ericquanz.ruleofthree",
       "permissions": [],
       "adaptiveIcon": {
+        "foregroundImage": "assets/icon/adaptive-icon.png",
         "backgroundColor": "#7746E8"
       }
     }
