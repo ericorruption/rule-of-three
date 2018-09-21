@@ -5,11 +5,12 @@
     "description": "Calulate rule of 3 math problems effortlessly!",
     "privacy": "public",
     "icon": "assets/icon/original.png",
-    "primaryColor": "#7746e8",
-    "sdkVersion": "26.0.0",
+    "primaryColor": "#7746E8",
+    "githubUrl": "https://github.com/ericorruption/rule-of-three",
+    "sdkVersion": "30.0.1",
     "splash": {
       "image": "assets/splash.png",
-      "backgroundColor": "#7746e8"
+      "backgroundColor": "#7746E8"
     },
     "ios": {
       "bundleIdentifier": "com.ericquanz.ruleofthree",
@@ -19,7 +20,10 @@
     "android": {
       "package": "com.ericquanz.ruleofthree",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.ericquanz.ruleofthree",
-      "permissions": []
+      "permissions": [],
+      "adaptiveIcon": {
+        "backgroundColor": "#7746E8"
+      }
     }
   }
 }

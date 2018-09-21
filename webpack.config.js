@@ -15,6 +15,23 @@ const plugins = [
   })
 ];
 
+const babelLoaderConfig = {
+  test: /\.js$/,
+  include: [
+    resolve(appDirectory, "App.web.js"),
+    resolve(appDirectory, "src"),
+    resolve(appDirectory, "node_modules/react-native-easy-toast")
+  ],
+  use: {
+    loader: "babel-loader",
+    options: {
+      cacheDirectory: true,
+      presets: ["react-native"],
+      plugins: ["react-native-web"]
+    }
+  }
+};
+
 if (process.env.NODE_ENV === "production") {
   plugins.push(
     new SWPrecacheWebpackPlugin({
@@ -29,25 +46,19 @@ if (process.env.NODE_ENV === "production") {
 }
 
 module.exports = {
-  entry: "./App.web.js",
+  entry: [resolve(appDirectory, "App.web.js")],
   output: {
-    filename: "[name].[hash].js"
+    filename: "[name].[hash].js",
+    path: resolve(appDirectory, "dist")
   },
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        include: [
-          resolve(appDirectory, "App.web.js"),
-          resolve(appDirectory, "src"),
-          resolve(appDirectory, "node_modules/react-native-easy-toast")
-        ],
-        loader: "babel-loader",
-        options: {
-          plugins: ["react-native-web"]
-        }
-      }
-    ]
+    rules: [babelLoaderConfig]
   },
-  plugins
+  plugins,
+  resolve: {
+    alias: {
+      "react-native$": "react-native-web"
+    },
+    extensions: [".web.js", ".js"]
+  }
 };

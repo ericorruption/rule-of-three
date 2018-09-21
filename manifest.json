@@ -3,7 +3,7 @@
   "short_name": "Rule of 3",
   "description": "Calulate rule of 3 math problems effortlessly!",
   "manifest_version": 2,
-  "version": "1.1",
+  "version": "1.2",
   "author": "ericorruption",
   "icons": {
     "16": "assets/icon/16.png",
