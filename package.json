@@ -36,7 +36,7 @@
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-native": "0.55.4",
-    "react-native-easy-toast": "1.1.0",
+    "react-native-easy-toast": "1.2.0",
     "react-native-web": "0.9.0"
   },
   "devDependencies": {
