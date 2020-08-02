@@ -35,7 +35,7 @@
     "expo": "30.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-native": "0.55.4",
+    "react-native": "0.63.0",
     "react-native-easy-toast": "1.2.0",
     "react-native-web": "0.12.3"
   },
