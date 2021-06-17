@@ -19,6 +19,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.ericquanz.ruleofthree",
+      "versionCode": 3,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#7746E8"
