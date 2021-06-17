@@ -1,21 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { StrictMode } from "react";
+import type { FunctionComponent } from "react";
+import { SafeAreaView, StatusBar } from "react-native";
+import { ToastProvider } from "react-native-fast-toast";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import { App } from "./src/App";
+import { brandPrimary } from "./src/App.style";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const Entrypoint: FunctionComponent = () => (
+  <StrictMode>
+    <ToastProvider placement="bottom">
+      {/* Applies color to iOS */}
+      <SafeAreaView style={{ backgroundColor: brandPrimary }}>
+        {/* Applies color to Android */}
+        <StatusBar barStyle="light-content" backgroundColor={brandPrimary} />
+        <App />
+      </SafeAreaView>
+    </ToastProvider>
+  </StrictMode>
+);
+
+export default Entrypoint;
