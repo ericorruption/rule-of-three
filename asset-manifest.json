@@ -1,21 +1,21 @@
 {
   "files": {
-    "app.js": "/static/js/app.cde8f079.chunk.js",
-    "app.js.map": "/static/js/app.cde8f079.chunk.js.map",
-    "runtime~app.js": "/static/js/runtime~app.2e9f1821.js",
-    "runtime~app.js.map": "/static/js/runtime~app.2e9f1821.js.map",
-    "static/js/2.37e87e34.chunk.js": "/static/js/2.37e87e34.chunk.js",
-    "static/js/2.37e87e34.chunk.js.map": "/static/js/2.37e87e34.chunk.js.map",
-    "favicon-16.png": "/favicon-16.png",
-    "favicon-32.png": "/favicon-32.png",
-    "favicon.ico": "/favicon.ico",
-    "index.html": "/index.html",
-    "manifest.json": "/manifest.json",
-    "serve.json": "/serve.json",
-    "static/js/2.37e87e34.chunk.js.LICENSE.txt": "/static/js/2.37e87e34.chunk.js.LICENSE.txt"
+    "app.js": "/rule-of-three/static/js/app.cde8f079.chunk.js",
+    "app.js.map": "/rule-of-three/static/js/app.cde8f079.chunk.js.map",
+    "runtime~app.js": "/rule-of-three/static/js/runtime~app.d0075b05.js",
+    "runtime~app.js.map": "/rule-of-three/static/js/runtime~app.d0075b05.js.map",
+    "static/js/2.37e87e34.chunk.js": "/rule-of-three/static/js/2.37e87e34.chunk.js",
+    "static/js/2.37e87e34.chunk.js.map": "/rule-of-three/static/js/2.37e87e34.chunk.js.map",
+    "favicon-16.png": "/rule-of-three/favicon-16.png",
+    "favicon-32.png": "/rule-of-three/favicon-32.png",
+    "favicon.ico": "/rule-of-three/favicon.ico",
+    "index.html": "/rule-of-three/index.html",
+    "manifest.json": "/rule-of-three/manifest.json",
+    "serve.json": "/rule-of-three/serve.json",
+    "static/js/2.37e87e34.chunk.js.LICENSE.txt": "/rule-of-three/static/js/2.37e87e34.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime~app.2e9f1821.js",
+    "static/js/runtime~app.d0075b05.js",
     "static/js/2.37e87e34.chunk.js",
     "static/js/app.cde8f079.chunk.js"
   ]
