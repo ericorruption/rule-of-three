@@ -1,32 +1,39 @@
 {
-  "name": "Rule of Three",
-  "short_name": "Rule of 3",
-  "description": "Calculate rule of 3 math problems",
-  "theme_color": "#7746e8",
-  "background_color": "#7746e8",
-  "start_url": "index.html?utm_source=homescreen",
+  "background_color": "#7746E8",
+  "description": "Calulate rule of 3 math problems effortlessly!",
   "display": "standalone",
-  "icons": [
-    {
-      "src": "images/icon/192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "images/icon/512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
+  "lang": "en",
+  "name": "Rule of Three",
+  "short_name": "Rule of Three",
+  "start_url": "/?utm_source=web_app_manifest",
+  "orientation": "portrait",
   "related_applications": [
     {
-      "platform": "play",
-      "id": "com.google.samples.apps.iosched",
-      "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+      "platform": "itunes",
+      "id": "com.ericquanz.ruleofthree"
     },
     {
-      "platform": "itunes",
-      "url": "https://itunes.apple.com/app/example-app1/id123456789"
+      "platform": "play",
+      "url": "http://play.google.com/store/apps/details?id=com.ericquanz.ruleofthree",
+      "id": "com.ericquanz.ruleofthree"
+    }
+  ],
+  "prefer_related_applications": true,
+  "icons": [
+    {
+      "src": "/pwa/chrome-icon/chrome-icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/chrome-icon/chrome-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/chrome-icon/chrome-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
