@@ -6,11 +6,12 @@ export const style = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
     padding: "5%",
+    flex: 1,
     borderTopColor: Platform.OS === "web" ? brandPrimary : undefined,
     borderTopWidth: Platform.OS === "web" ? 8 : undefined,
   },
   content: {
-    marginHorizontal: "auto",
+    alignSelf: "center",
     maxWidth: 600,
   },
   title: {
