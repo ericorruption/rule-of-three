@@ -1,11 +1,10 @@
-import React from "react";
-import type { FunctionComponent } from "react";
-import { Text, TextInput, View, Keyboard, Clipboard } from "react-native";
-import { useToast } from "react-native-fast-toast";
-
+import type { FunctionComponent, ReactNode } from "react";
+import { Text, TextInput, View, Keyboard } from "react-native";
+import { useToast } from "react-native-toast-notifications";
 import { calculate } from "./calculate";
 import { useState } from "react";
 import { brandPrimary, style } from "./App.style";
+import * as Clipboard from "expo-clipboard";
 
 // TODO handle decimals
 export const App: FunctionComponent = () => {
@@ -65,8 +64,7 @@ export const App: FunctionComponent = () => {
             }
 
             Keyboard.dismiss();
-            // TODO migrate to @react-community/clipboard (doesnt work on web yet)
-            Clipboard.setString(value.toString());
+            Clipboard.setStringAsync(value.toString());
             toast?.show("Result copied to clipboard!");
           }}
         />
@@ -75,7 +73,7 @@ export const App: FunctionComponent = () => {
   );
 };
 
-const Shell: FunctionComponent = ({ children }) => (
+const Shell = ({ children }: { children: ReactNode }) => (
   <View style={style.container}>
     <View style={style.content}>
       <Text style={style.title}>Rule of Three</Text>
