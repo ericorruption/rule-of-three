@@ -21,11 +21,12 @@
     },
     "android": {
       "package": "com.ericquanz.ruleofthree",
-      "versionCode": 4,
+      "versionCode": 6,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#7746E8"
-      }
+      },
+      "blockedPermissions": ["com.google.android.gms.permission.AD_ID"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
