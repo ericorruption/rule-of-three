@@ -2,7 +2,7 @@
   "expo": {
     "name": "Rule of Three",
     "slug": "rule-of-three",
-    "description": "Calulate rule of 3 math problems effortlessly!",
+    "description": "Calculate rule of 3 math problems effortlessly!",
     "version": "1.0.1",
     "orientation": "default",
     "icon": "./assets/icon.png",
