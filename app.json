@@ -35,6 +35,9 @@
       "eas": {
         "projectId": "2c5cce10-3f60-11e8-b01a-f7c8098ac9bd"
       }
+    },
+    "experiments": {
+      "baseUrl": "/rule-of-three"
     }
   }
 }

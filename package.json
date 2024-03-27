@@ -5,9 +5,9 @@
   "homepage": "/rule-of-three",
   "scripts": {
     "start": "expo start",
-    "deploy:web": "gh-pages -d web-build",
-    "predeploy:web": "expo build:web",
-    "preview:web": "npx serve web-build",
+    "deploy:web": "gh-pages -t -d dist",
+    "predeploy:web": "npx rimraf dist && expo export --platform web",
+    "preview:web": "npx serve dist",
     "build:android": "expo build:android",
     "ts:check": "tsc",
     "android": "expo run:android",
