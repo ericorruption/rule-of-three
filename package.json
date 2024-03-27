@@ -11,7 +11,11 @@
     "build:android": "expo build:android",
     "ts:check": "tsc",
     "android": "expo run:android",
-    "ios": "expo run:ios"
+    "ios": "expo run:ios",
+    "script:icon": "node scripts/icon.mjs assets/icon.png",
+    "prebuild:extension": "npx rimraf dist",
+    "build:extension": "expo export --platform web && mkdir -p dist/assets/icon && npm run script:icon && node scripts/extension.mjs",
+    "postbuild:extension": "cd dist && npx web-ext build && cd .. && mv dist/web-ext-artifacts release"
   },
   "dependencies": {
     "@expo/metro-runtime": "~3.1.3",
@@ -27,6 +31,7 @@
     "@babel/core": "^7.20.0",
     "@types/react": "~18.2.45",
     "gh-pages": "^3.2.3",
+    "sharp": "^0.33.3",
     "typescript": "^5.1.3"
   },
   "private": true,

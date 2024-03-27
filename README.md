@@ -48,7 +48,7 @@ You can execute `npm run` for an overview of all scripts available.
 The project has different npm scripts to handle the different builds and deployments.
 
 - Extensions should be uploaded by hand in [their](#) [respective](https://chrome.google.com/webstore/developer/dashboard) [websites](https://addons.mozilla.org/en-US/developers/)
-- Android apps should be registered in Play Store. For each new version you should upload the generated `.apk` file.
+- Android apps should be registered in Play Store. Please refer to the [eas documentation](https://expo.dev/eas).
 - iOS apps should be sent to the app store either via xCode or the Application Loader.
 
 ## Contributing
@@ -63,5 +63,3 @@ Fork it. Branch it. Push it. PR it.
 - iOS deployment again
 - Mobile App Release automation
 - menu bar app
-- browser extension firefox / chrome
-- npx expo-optimize

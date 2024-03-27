@@ -1,0 +1,30 @@
+{
+  "name": "Rule of Three",
+  "short_name": "Rule of 3",
+  "description": "Calculate rule of 3 math problems effortlessly!",
+  "manifest_version": 3,
+  "version": "1.3",
+  "author": "loiro.0+ruleofthree@gmail.com",
+  "icons": {
+    "16": "assets/icon/16.png",
+    "32": "assets/icon/32.png",
+    "48": "assets/icon/48.png",
+    "128": "assets/icon/128.png"
+  },
+  "action": {
+    "default_title": "Rule of Three",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "assets/icon/16.png",
+      "24": "assets/icon/24.png",
+      "32": "assets/icon/32.png",
+      "48": "assets/icon/48.png",
+      "128": "assets/icon/128.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{512a509c-992e-4964-862d-97937650179b}"
+    }
+  }
+}
