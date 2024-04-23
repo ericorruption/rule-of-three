@@ -30,7 +30,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/react": "~18.2.45",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^5.0.0",
     "sharp": "^0.33.3",
     "typescript": "^5.1.3"
   },
