@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@expo/metro-runtime": "~3.1.3",
-    "expo": "~50.0.14",
+    "expo": "~52.0.0",
     "expo-clipboard": "~5.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
